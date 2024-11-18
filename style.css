@@ -10,11 +10,13 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 #container-img {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     flex-grow: 1;
 }
@@ -32,16 +34,96 @@ header {
     mix-blend-mode: lighten;
     border-radius: 90%;
     border: 2px solid white;
-    margin-top: 2em;
     transition: all 2 ease;
 }
 
-h2, header h1,p {
+h2,h3, h1, p {
     color: white;
 }
 
 #redes {
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
+    padding-left: 20%;
+    padding-right: 20%;
     flex-wrap: wrap;
+}
+
+#sobre {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+#sobre:hover {
+    background-color: rgb(41, 41, 41);
+    border: 1px solid rgb(41, 41, 41);
+}
+
+#redes img {
+    height: 30px;
+    width: 30px;
+    transition: all 0.2s ease;
+}
+
+#redes img:hover {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+#formacao {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#formacao .item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+#formacao .item:hover {
+    border: 1px solid rgb(41, 41, 41);
+    background-color: rgb(41, 41, 41);
+}
+
+#div-icon-mode {
+    display: flex;
+    width: 20em;
+    justify-content: end;
+    margin-top: 15px;
+}
+
+#icon-mode {
+    height: 30px;
+    width: 30px;
+}
+
+#icon-mode:hover {
+    cursor: pointer;
+    background-color: rgb(155, 155, 155);
+    border-radius: 90%;
+}
+
+/* Define o estado inicial dos elementos */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);  /* Os elementos começam um pouco abaixo */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Define o estado final dos elementos quando visíveis */
+.visible {
+  opacity: 1;
+  transform: translateY(0);  /* Eles se movem para a posição original */
 }
