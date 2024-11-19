@@ -18,4 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
       observer.observe(element);
     });
   });
+
+const whatsapp = document.getElementById('whatsapp')
+
+whatsapp.onclick = () =>{
+  let text = `Olá!\nVi seus projetos e estou interessado em contratar seus serviços!`
+  let url = `https://api.whatsapp.com/send?phone=5581988993441&text=${encodeURIComponent(text)}`
+  window.open(url, "_blank")
+}
   

@@ -13,6 +13,13 @@ header {
     margin-bottom: 100px;
 }
 
+@media (min-width: 1000px){
+    header {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
 #container-img {
     display: flex;
     align-items: center;
@@ -54,11 +61,22 @@ h2,h3, h1, p {
 }
 
 #sobre {
-    max-width: 650px;
     padding: 10px;
     border: 1px solid white;
     border-radius: 20px;
     transition: all 0.2s ease;
+}
+
+@media (min-width: 684px){
+    #sobre {
+        max-width: 650px;
+    }
+}
+
+@media (max-width: 683px){
+    #sobre {
+        max-width: 300px;
+    }
 }
 
 #sobre:hover {
@@ -153,12 +171,12 @@ h2,h3, h1, p {
 /* Define o estado inicial dos elementos */
 .hidden {
   opacity: 0;
-  transform: translateX(200px);  /* Os elementos começam um pouco abaixo */
+  transform: translateY(100px);  /* Os elementos começam um pouco abaixo */
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 /* Define o estado final dos elementos quando visíveis */
 .visible {
   opacity: 1;
-  transform: translateX(0);  /* Eles se movem para a posição original */
+  transform: translateY(0);  /* Eles se movem para a posição original */
 }
