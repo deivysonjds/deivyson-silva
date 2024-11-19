@@ -48,9 +48,13 @@ h2,h3, h1, p {
     padding-right: 20%;
     flex-wrap: wrap;
 }
+#div-sobre {
+    display: flex;
+    justify-content: center;
+}
 
 #sobre {
-    margin: 10px;
+    max-width: 650px;
     padding: 10px;
     border: 1px solid white;
     border-radius: 20px;
@@ -60,6 +64,7 @@ h2,h3, h1, p {
 #sobre:hover {
     background-color: rgb(41, 41, 41);
     border: 1px solid rgb(41, 41, 41);
+    transform: scale(1.1);
 }
 
 #redes img {
@@ -69,14 +74,13 @@ h2,h3, h1, p {
 }
 
 #redes img:hover {
-    height: 40px;
-    width: 40px;
+    transform: scale(1.2);
     cursor: pointer;
 }
 
 #formacao {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     text-align: center;
 }
@@ -95,6 +99,7 @@ h2,h3, h1, p {
 #formacao .item:hover {
     border: 1px solid rgb(41, 41, 41);
     background-color: rgb(41, 41, 41);
+    transform: scale(1.05);
 }
 
 #div-icon-mode {
@@ -107,23 +112,53 @@ h2,h3, h1, p {
 #icon-mode {
     height: 30px;
     width: 30px;
+    animation: rotacionar 3s linear infinite;
+    transition: all 0.2s ease;
+}
+
+@keyframes rotacionar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
 }
 
 #icon-mode:hover {
     cursor: pointer;
-    background-color: rgb(155, 155, 155);
+    background-color: rgb(107, 107, 107);
     border-radius: 90%;
+    transform: scale(1.2);
+}
+
+#habilidades {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#habilidades img {
+    margin: 7px;
+    transition: all 0.2s ease;
+}
+
+#habilidades img:hover {
+    transform: scale(1.1)
 }
 
 /* Define o estado inicial dos elementos */
 .hidden {
   opacity: 0;
-  transform: translateY(50px);  /* Os elementos começam um pouco abaixo */
+  transform: translateX(200px);  /* Os elementos começam um pouco abaixo */
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 /* Define o estado final dos elementos quando visíveis */
 .visible {
   opacity: 1;
-  transform: translateY(0);  /* Eles se movem para a posição original */
+  transform: translateX(0);  /* Eles se movem para a posição original */
 }
