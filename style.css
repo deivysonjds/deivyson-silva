@@ -114,10 +114,22 @@ h2,h3, h1, p {
     transition: all 0.2s ease;
 }
 
+
 #formacao .item:hover {
     border: 1px solid rgb(41, 41, 41);
     background-color: rgb(41, 41, 41);
     transform: scale(1.05);
+}
+
+.btn-cert {
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-cert:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 #div-icon-mode {
@@ -130,7 +142,7 @@ h2,h3, h1, p {
 #icon-mode {
     height: 30px;
     width: 30px;
-    animation: rotacionar 3s linear infinite;
+    animation: rotacionar 20s linear infinite;
     transition: all 0.2s ease;
 }
 
@@ -168,15 +180,47 @@ h2,h3, h1, p {
     transform: scale(1.1)
 }
 
-/* Define o estado inicial dos elementos */
+#projetos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#projetos a {
+    text-decoration: none;
+}
+
+#projetos h3, #projetos p {
+    color:black;
+}
+
+#projetos .item {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 0.2s ease;
+}
+
+#projetos .item:hover {
+    transform: scale(1.1);
+    background-color: rgb(235, 235, 235);
+}
+
+footer {
+    margin-top: 20px;
+}
+
+
 .hidden {
   opacity: 0;
-  transform: translateY(100px);  /* Os elementos começam um pouco abaixo */
+  transform: translateY(100px); 
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-/* Define o estado final dos elementos quando visíveis */
 .visible {
   opacity: 1;
-  transform: translateY(0);  /* Eles se movem para a posição original */
+  transform: translateY(0);  
 }
