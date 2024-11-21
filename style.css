@@ -125,6 +125,7 @@ h2,h3, h1, p {
     padding: 5px;
     border-radius: 10px;
     border: none;
+    transition: all 0.2s ease;
 }
 
 .btn-cert:hover {
