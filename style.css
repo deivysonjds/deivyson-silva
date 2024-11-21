@@ -36,8 +36,8 @@ header {
 }
 
 #img-header {
-    height: 20em;
-    width: 20em;
+    height: 18em;
+    width: 18em;
     mix-blend-mode: lighten;
     border-radius: 90%;
     border: 2px solid white;
@@ -143,17 +143,21 @@ h2,h3, h1, p {
 #icon-mode {
     height: 30px;
     width: 30px;
-    animation: rotacionar 20s linear infinite;
+    animation: aumentar 2s ease-in-out infinite;
     transition: all 0.2s ease;
 }
 
-@keyframes rotacionar {
+@keyframes aumentar {
     0% {
-        transform: rotate(0deg);
+        transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.2);
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: scale(1);
     }
 
 }
@@ -195,10 +199,26 @@ h2,h3, h1, p {
     color:black;
 }
 
+#projetos button {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    width: 60px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    margin: 5px;
+}
+
+#projetos button:hover {
+    transform: scale(1.1);
+    background-color: rgb(107, 107, 107);
+    cursor: pointer;
+}
+
 #projetos .item {
     background-color: white;
     width: 250px;
-    height: 250px;
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
@@ -208,6 +228,31 @@ h2,h3, h1, p {
 #projetos .item:hover {
     transform: scale(1.1);
     background-color: rgb(235, 235, 235);
+}
+
+#experiencias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#experiencias .item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+
+#experiencias .item:hover {
+    border: 1px solid rgb(41, 41, 41);
+    background-color: rgb(41, 41, 41);
+    transform: scale(1.05);
 }
 
 footer {
