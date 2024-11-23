@@ -4,6 +4,10 @@ body {
     text-align: center;
 }
 
+body.light {
+    background-color: white;
+}
+
 header {
     display: flex;
     max-height: 100%;
@@ -38,14 +42,18 @@ header {
 #img-header {
     height: 18em;
     width: 18em;
-    mix-blend-mode: lighten;
     border-radius: 90%;
     border: 2px solid white;
-    transition: all 2 ease;
 }
-
+#img-header.light {
+    border: 2px solid black;
+}
 h2,h3, h1, p {
     color: white;
+}
+
+h2.light,h3.light, h1.light, p.light {
+    color: rgb(0, 0, 0);
 }
 
 #redes {
@@ -53,8 +61,10 @@ h2,h3, h1, p {
     justify-content:space-between;
     padding-left: 20%;
     padding-right: 20%;
+    padding-bottom: 10px;
     flex-wrap: wrap;
 }
+
 #div-sobre {
     display: flex;
     justify-content: center;
@@ -85,14 +95,13 @@ h2,h3, h1, p {
     transform: scale(1.1);
 }
 
-#redes img {
-    height: 30px;
-    width: 30px;
+.my-contacts {
+    fill: white;
     transition: all 0.2s ease;
 }
 
-#redes img:hover {
-    transform: scale(1.2);
+.my-contacts:hover {
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -113,7 +122,6 @@ h2,h3, h1, p {
     border-radius: 20px;
     transition: all 0.2s ease;
 }
-
 
 #formacao .item:hover {
     border: 1px solid rgb(41, 41, 41);
@@ -179,6 +187,17 @@ h2,h3, h1, p {
 #habilidades img {
     margin: 7px;
     transition: all 0.2s ease;
+}
+
+.my-hab {
+    fill: white;
+    /* margin: 7px; */
+    transition: all 0.2s ease;
+}
+
+.my-hab:hover {
+    transform: scale(1.1);
+    fill: rgb(0, 0, 0);
 }
 
 #habilidades img:hover {
