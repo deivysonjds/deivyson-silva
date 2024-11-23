@@ -182,7 +182,7 @@ h2,h3, h1, p {
 }
 
 #habilidades img:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
 #projetos {
