@@ -77,6 +77,10 @@ h2.light,h3.light, h1.light, p.light {
     transition: all 0.2s ease;
 }
 
+#sobre.light {
+    border: 1px solid rgb(0, 0, 0);
+}
+
 @media (min-width: 684px){
     #sobre {
         max-width: 650px;
@@ -130,6 +134,10 @@ h2.light,h3.light, h1.light, p.light {
     transition: all 0.2s ease;
 }
 
+#formacao .item.light {
+    border: 1px solid rgb(0, 0, 0);
+}
+
 #formacao .item:hover {
     border: 1px solid rgb(41, 41, 41);
     background-color: rgb(41, 41, 41);
@@ -162,6 +170,25 @@ h2.light,h3.light, h1.light, p.light {
     transition: all 0.2s ease;
 }
 
+#icon-mode:hover {
+    cursor: pointer;
+    background-color: rgb(107, 107, 107);
+    border-radius: 90%;
+    transform: scale(1.2);
+}
+
+#icon-mode.light {
+    height: 30px;
+    width: 30px;
+    animation: aumentar 2s ease-in-out infinite;
+    transition: all 0.2s ease;
+}
+
+#icon-mode.light:hover {
+    background-color: rgb(219, 219, 219);
+    transform: scale(1.2);
+}
+
 @keyframes aumentar {
     0% {
         transform: scale(1);
@@ -177,12 +204,7 @@ h2.light,h3.light, h1.light, p.light {
 
 }
 
-#icon-mode:hover {
-    cursor: pointer;
-    background-color: rgb(107, 107, 107);
-    border-radius: 90%;
-    transform: scale(1.2);
-}
+
 
 #habilidades {
     display: flex;
@@ -265,6 +287,16 @@ h2.light,h3.light, h1.light, p.light {
     background-color: rgb(235, 235, 235);
 }
 
+#projetos .item.light {
+    background-color: rgb(0, 0, 0);
+    transition: all 0.2s ease;
+}
+
+#projetos .item.light:hover {
+    transform: scale(1.1);
+    background-color: rgb(0, 0, 0);
+}
+
 #experiencias {
     display: flex;
     justify-content: center;
@@ -283,6 +315,15 @@ h2.light,h3.light, h1.light, p.light {
     transition: all 0.2s ease;
 }
 
+#experiencias .item.light {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#experiencias .item.light:hover {
+    border: 1px solid rgb(219, 219, 219);
+    background-color: rgb(219, 219, 219);
+    transform: scale(1.05);
+}
 
 #experiencias .item:hover {
     border: 1px solid rgb(41, 41, 41);
