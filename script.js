@@ -32,9 +32,9 @@ const lightButtonMode = document.getElementById("icon-mode");
 
 lightButtonMode.onclick = () => {
   const body = document.body;
-  const textWhit = document.querySelectorAll('div#experiencias p, div#experiencias h3, div#hab h2, div#formacao p, div#formacao h3, div#formacao button')
+  const textWhit = document.querySelectorAll('div#experiencias p, div#experiencias h3, div#hab h2, div#formacao p, div#formacao h3, div#formacao button, header p, header h1, div#container-sobre h2, div#container-sobre p, div#projetos h3, p, button')
   const imgPerfil = document.getElementById('img-header')
-
+  const redes = document.querySelectorAll('div#redes svg g')
   body.classList.toggle("light");
   
   if (body.classList.contains("light")) {
@@ -51,11 +51,19 @@ lightButtonMode.onclick = () => {
     textWhit.forEach((e)=>{
       e.classList.add("light")
     })
+
+    redes.forEach((e)=>{
+      e.classList.add("light")
+    })
   } else {
     lightButtonMode.src = "./svg/icons8-sun.svg"
     body.classList.remove("light");
     imgPerfil.classList.remove('light')
     textWhit.forEach((e)=>{
+      e.classList.remove("light")
+    })
+
+    redes.forEach((e)=>{
       e.classList.remove("light")
     })
   }

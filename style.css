@@ -95,14 +95,21 @@ h2.light,h3.light, h1.light, p.light {
     transform: scale(1.1);
 }
 
-.my-contacts {
-    fill: white;
+#redes div {
     transition: all 0.2s ease;
 }
 
-.my-contacts:hover {
+#redes div:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.my-contacts {
+    fill: white;
+}
+
+.my-contacts.light {
+    fill: rgb(0, 0, 0);
 }
 
 #formacao {
@@ -218,6 +225,10 @@ h2.light,h3.light, h1.light, p.light {
     color:black;
 }
 
+#projetos h3.light, #projetos p.light {
+    color:rgb(255, 255, 255);
+}
+
 #projetos button {
     padding: 5px;
     background-color: black;
@@ -227,6 +238,11 @@ h2.light,h3.light, h1.light, p.light {
     border-radius: 10px;
     transition: all 0.2s ease;
     margin: 5px;
+}
+
+#projetos button.light {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
 }
 
 #projetos button:hover {
