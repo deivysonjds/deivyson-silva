@@ -77,8 +77,19 @@ h2.light,h3.light, h1.light, p.light {
     transition: all 0.2s ease;
 }
 
+#sobre:hover {
+    background-color: rgb(41, 41, 41);
+    border: 1px solid rgb(41, 41, 41);
+    transform: scale(1.1);
+}
+
 #sobre.light {
     border: 1px solid rgb(0, 0, 0);
+}
+
+#sobre.light:hover {
+    background-color: rgb(219, 219, 219);
+    border: 1px solid rgb(219, 219, 219);
 }
 
 @media (min-width: 684px){
@@ -91,12 +102,6 @@ h2.light,h3.light, h1.light, p.light {
     #sobre {
         max-width: 300px;
     }
-}
-
-#sobre:hover {
-    background-color: rgb(41, 41, 41);
-    border: 1px solid rgb(41, 41, 41);
-    transform: scale(1.1);
 }
 
 #redes div {
@@ -134,17 +139,25 @@ h2.light,h3.light, h1.light, p.light {
     transition: all 0.2s ease;
 }
 
-#formacao .item.light {
-    border: 1px solid rgb(0, 0, 0);
-}
-
 #formacao .item:hover {
     border: 1px solid rgb(41, 41, 41);
     background-color: rgb(41, 41, 41);
     transform: scale(1.05);
 }
 
+#formacao .item.light {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#formacao .item.light:hover {
+    border: 1px solid rgb(219, 219, 219);
+    background-color: rgb(219, 219, 219);
+    transform: scale(1.05);
+}
+
 .btn-cert {
+    background-color: white;
+    color: black;
     padding: 5px;
     border-radius: 10px;
     border: none;
@@ -154,6 +167,11 @@ h2.light,h3.light, h1.light, p.light {
 .btn-cert:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+.btn-cert.light {
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
 #div-icon-mode {
@@ -204,32 +222,43 @@ h2.light,h3.light, h1.light, p.light {
 
 }
 
-
+#hab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 #habilidades {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
+    max-width: 500px;
 }
 
-#habilidades img {
-    margin: 7px;
+#habilidades .item {
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    border-radius: 10px;
     transition: all 0.2s ease;
 }
 
-.my-hab {
-    fill: white;
-    /* margin: 7px; */
-    transition: all 0.2s ease;
+#habilidades .item.light {
+    background-color: rgb(0, 0, 0);
 }
 
-.my-hab:hover {
-    transform: scale(1.1);
-    fill: rgb(0, 0, 0);
+#habilidades .item p{
+    color: black;
 }
 
-#habilidades img:hover {
+#habilidades .item p.light{
+    color: rgb(255, 255, 255);
+}
+
+#habilidades .item:hover {
     transform: scale(1.1);
 }
 
